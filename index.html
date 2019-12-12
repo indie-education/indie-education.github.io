@@ -33,33 +33,39 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
-    h1 {
-        margin-bottom: 0.3em;
-    }
+    h1 {padding: 0.5em 0;}
 
     h2 {
-        margin: 1em 0 0.5em 0;
+        margin: 2em 0 0.5em 0;
     }
 
     h4 {
         font-weight: 100;
+        margin-bottom: 3em;
     }
 
     @media (orientation: portrait) {
 
         h1 {
-            font-size: 5vw;
+            font-size: 2rem;
         }
+    .hero img {
+        width: 50vw;
+    }
     }
 
     @media (orientation: landscape) {
 
         h1 {
-            font-size: 3vw;
+            font-size: 2.7vw;
+            max-width: 60vw;
         }
+    .hero img {
+        width: 20vw;
+    }
     }
 
     h1 span {
@@ -72,18 +78,27 @@
         background-color: #333333;
         color: #ffffff
     }
+
+    a {color: #ff788f;
+    font-weight: bold;}
+    a:before {content: '→ ';}
+
 </style>
 
 <body>
 
     <section class="hero">
+        <img src="5d5e30ba8983564552c60dc7_selfie.svg">
+        <!--
         <h1>be social<span>'ly responsible</span></h1>
         <h1>be open <span>source</span></h1>
-        <h1>be indie <span>educated</span></h1>
+        <h1>be indie <span>educated</span></h1>-->
 
-        <h2>Образовательные проекты от независимых мейкеров</h2>
+        <h1>Образовательные проекты от&nbsp;независимых мейкеров</h1>
 
         <h4>developed/curated by Глеб Лихобабин</h4>
+
+        <a>CONTENT COMING SOON</a>
 
     </section>
     <!--
